@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Psseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 4em;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+        div:hover {
+            background-color: lightcoral;
+        }
+
+        div#d3:hover {
+            color:navy;
+        }
+
+        main p {
+            display: inline-block;
+        }
+
+        main > p > span {
+            display: none;
+        }
+
+        main > p:hover > span {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+        01
+        <p>Um texto</p>
+    </div>
+
+    <div id="d2">
+        02
+        <p>Um texto</p>
+    </div>
+
+    <div id="d3">
+        03
+        <p>Um texto</p>
+    </div>
+
+    <div id="d4">
+        04
+        <p>Um texto</p>
+    </div>
+    <hr>
+
+    <main>
+        <p>Um texto <br>
+        <span>Um texto escondido</span></p>
+    </main>
+
+</body>
+</html>

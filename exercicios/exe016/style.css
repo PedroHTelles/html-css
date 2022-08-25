@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2? family= Cutive+Mono & display=swap');
+
+@font-face {
+    font-family: 'open' ;
+    src: url(fontes/opensans/static/OpenSans/OpenSans-Medium.ttf);
+    font-weight: normal ;
+    font-style: normal;
+    font-size:;
+}
+
+
+*{
+    font-family: 'open';
+}
+
+
+body{
+    height: 100%;
+    background-image: linear-gradient(to top, #BF988A, #D9B9AD);
+    background-attachment: fixed;
+}
+
+main{
+    padding: 15px;
+    margin: auto;
+    background-color: #f2cfc3f9;
+    border-radius: 5px;
+    width: 60%;
+    box-shadow: 5px 5px 10px #26010196;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #062e52;
+    text-shadow: 5px 5px 5px #062f5259;
+}
+
+h2{
+    font-size: 1.3em;
+    color: #734D45;
+}
+
+p{
+    font-size: 0.8em;
+    text-align: justify;
+    text-indent: 10px;
+}
