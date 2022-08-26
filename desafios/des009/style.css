@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: font1 ;
+    src: url(fontes/BebasNeue-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: font1;
+    letter-spacing: 2px;
+}
+
+
+body{
+    background-image: linear-gradient(to right, #2F4F4E, #445451 40%);
+}
+
+main{
+    margin: 35px auto;
+    padding: 20px;
+    min-width: 260px;
+    max-width: 800px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, transparent , #445451 40%, #2F4F4E, transparent);
+}
+
+main > h1{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 45px;
+    font-size: 2.5em;
+}
+
+main > section{
+    margin: auto;
+    max-width: max-content;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: radial-gradient(circle, #445451 10%, transparent);
+}
+
+main > section > a{
+    text-decoration: none;
+    color: white;
+}
+
+main > section > a > img{
+    margin: 5px;
+}
+
+main > section a.centralizar{
+    display: block;
+    width: max-content;
+    margin: 5px auto 0 auto;
+}
+
+
+
+
+
+
+
+
