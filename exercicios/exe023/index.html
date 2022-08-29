@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            height: 100vh;
+
+            background-color: rgb(170, 170, 170);
+        }
+
+        main{
+            max-width: 800px;
+
+            margin: 0 auto;
+            padding: 40px 20px;
+
+            background-color: white;
+        }
+
+        main h1{
+            margin-bottom: 55px;
+        }
+
+        main table#tabela1{
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.389);
+
+            border-collapse: collapse;
+
+            max-width: 800px;
+            width: 100%;
+
+            margin-bottom: 50px;
+        }
+
+        main table#tabela1 td{
+            border: 1px solid black;
+
+            padding: 10px;
+        }
+
+        main pre{
+            background-color: rgba(144, 144, 193, 0.433);
+
+            border-radius: 3px;
+
+            margin-bottom: 50px;
+        }
+
+        main table#tabela2{
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 50px;
+
+            border-collapse: collapse;
+        }
+
+        main table#tabela2 thead, main table#tabela2 tfoot{
+            color: white;
+
+            background-color: rgb(164, 164, 164);
+
+            text-align: center;
+        }
+
+        main table#tabela2 td, main table#tabela2 th{
+            border: 1px solid black;
+
+            padding: 10px;
+        }
+
+        main table#tabela2 td.num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Primeira tabela</h1>
+        
+        <h2>Tabela Teste</h2>
+        <table id="tabela1">
+            <tr><!-- PRIMEIRA LINHA -->
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr><!-- SEGUNDA LINHA -->
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr><!-- TERCEIRA LINHA -->
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr><!-- QUARTA LINHA -->
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+
+        <h2>Código</h2>
+        <p>Código referente a tabela a cima:</p>
+        <pre><code>
+            HTML:
+
+            &lt;table&gt;
+                &lt;tr&gt;<!-- PRIMEIRA LINHA -->
+                    &lt;td&gt;A1&lt;/td&gt;
+                    &lt;td&gt;B1&lt;/td&gt;
+                    &lt;td&gt;C1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;<!-- SEGUNDA LINHA -->
+                    &lt;td&gt;A2&lt;/td&gt;
+                    &lt;td&gt;B2&lt;/td&gt;
+                    &lt;td&gt;C2&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;<!-- TERCEIRA LINHA -->
+                    &lt;td&gt;A3&lt;/td&gt;
+                    &lt;td&gt;B3&lt;/td&gt;
+                    &lt;td&gt;C3&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;<!-- QUARTA LINHA -->
+                    &lt;td&gt;A4&lt;/td&gt;
+                    &lt;td&gt;B4&lt;/td&gt;
+                    &lt;td&gt;C4&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+
+
+            CSS:
+
+            &lt;style&gt;
+            main table{
+                box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.389);
+    
+                border-collapse: collapse;
+    
+                max-width: 800px;
+                width: 100%;
+    
+                margin-bottom: 50px;
+            }
+    
+            main table td{
+                border: 1px solid black;
+    
+                padding: 10px;
+            }
+            &lt;/style&gt;
+        </code></pre>
+
+        <h1>Tabelas grandes</h1>
+
+        <table id="tabela2">
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">117.448.561</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">107.948.745</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">101.248.354</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">97.448.851</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">89.288.683</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">83.395.782</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <th>Total</th>
+                <td class="total"><strong>476.045.952</strong></td>
+            </tfoot>
+        </table>
+
+        <h2>Código</h2>
+        <p>Código referente a tabela a cima:</p>
+        <pre><code>
+            HTML:
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Estado&lt;/th&gt;
+                        &lt;th&gt;População&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+    
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;São Paulo&lt;/td&gt;
+                        &lt;td class="num"&gt;117.448.561&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Rio de Janeiro&lt;/td&gt;
+                        &lt;td class="num"&gt;107.948.745&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Bahia&lt;/td&gt;
+                        &lt;td class="num"&gt;101.248.354&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Amazonas&lt;/td&gt;
+                        &lt;td class="num">97.448.851&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Minas Gerais&lt;/td&gt;
+                        &lt;td class="num"&gt;89.288.683&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+                        &lt;td class="num"&gt;83.395.782&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+    
+                &lt;tfoot&gt;
+                    &lt;th&gt;Total&lt;/th&gt;
+                    &lt;td class="total"&gt;&lt;strong&gt;476.045.952&lt;/strong&gt;&lt;/td&gt;
+                &lt;/tfoot&gt;
+            &lt;/table&gt;
+
+            
+            CSS:
+
+            main table#tabela2{
+                max-width: 800px;
+                width: 100%;
+                margin-bottom: 50px;
+    
+                border-collapse: collapse;
+            }
+    
+            main table#tabela2 thead, main table#tabela2 tfoot{
+                color: white;
+    
+                background-color: rgb(164, 164, 164);
+    
+                text-align: center;
+            }
+    
+            main table#tabela2 td, main table#tabela2 th{
+                border: 1px solid black;
+    
+                padding: 10px;
+            }
+    
+            main table#tabela2 td.num{
+                text-align: right;
+            }
+        </code></pre>
+
+    </main>
+</body>
+</html>
