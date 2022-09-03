@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>
+        Teste de formuário
+    </h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required maxlength="30" minlength="2" autocomplete="name" placeholder="Nome completo">
+        </p>
+
+        <p>
+            <label for="imedia">Média:</label> <input type="number" name="media" id="imedia" required min="0" max="10" step=".1" placeholder="Sua média de 0 a 10">
+        </p>
+
+        <p>
+            <label for="imesletivo">Período letivo:</label> <input type="month" name="mesletivo" id="imesletivo" value="2022-09" max="2022-09" min="1900-01" required>
+        </p>
+
+        <p>
+            <label for="iagendaprova">Agenda da prova:</label> <input type="date" name="agendaprova" id="iagendaprova" required min="2022-09-03" value="2022-09-03">
+        </p>
+
+        <p>
+            <label for="ihoraagenda">Horário de agenda:</label> <input type="time" name="horaagenda" id="ihoraagenda" required min="07:30" max="15:00">
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
