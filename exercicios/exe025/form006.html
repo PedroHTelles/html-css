@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form, h1{
+            max-width: 500px;
+            
+            margin: 0 auto 50px auto;
+        }
+
+        form fieldset, form div{
+            margin: 0 auto 15px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de formulário
+    </h1>
+
+    <form action="casastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Teste</legend>
+            <label for="icor">Cor:</label> <input type="color" name="cor" id="icor" value="#00ff00"><br>
+
+            <label for="isatisfacao">Nível de satisfação:</label> <input type="range" name="satisfacao" id="isatisfacao" min="0" max="100" step="10"><br>
+
+            <label for="img">Adicionar imagem:</label> <input type="file" name="img" id="iimg">
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
