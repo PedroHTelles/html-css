@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form, h1{
+            max-width: 500px;
+            
+            margin: 0 auto 50px auto;
+        }
+
+        form fieldset, form div{
+            margin: 0 auto 15px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de formulário
+    </h1>
+
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="iest">Estado: </label> 
+            <select name="est" id="iest">   
+
+                <option value="" selected>--- Selecinar ---</option>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+
+                <optgroup label="Região Suldeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Selecione ou digite">
+            <datalist id="lstprof">
+                <option value="Professor">Professor</option>
+                <option value="Atleta">Atleta</option>
+                <option value="Servidor público">Servidor público</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="isugest">Digite alguma sugestão: </label><br>
+            <textarea name="sugest" id="isugest" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+</body>
+</html>
