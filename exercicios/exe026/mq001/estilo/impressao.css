@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* ESTILO PARA IMPRESSAO */
+
+*{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+article::after{
+    content: 'Produzido por Pedro Henrique, para o curso em vídeo';
+}

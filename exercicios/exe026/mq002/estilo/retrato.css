@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* ESTILO RETRATO */
+
+body, html{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+h1, p{
+    margin: auto auto auto 0;
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 5px;
+}
