@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* CSS GERAIS / MOBILE FIRST */    
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+
+    background-color: darkgrey;
+    background-image: url(../imagem/back-print.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div#body{
+    height: 100%;
+
+    background-color: rgba(169, 169, 169, 0.573);
+}
+
+header{
+    background-color: rgb(70, 70, 70);
+}
+
+header h1{
+    text-align: center;
+
+    padding: 15px;
+}
+
+header span.material-symbols-outlined{
+    display: block;
+
+    margin: auto;
+
+    padding: 10px;
+
+    text-align: center;
+    color: white;
+
+    background-color: rgb(21, 21, 21);
+
+    cursor: pointer;
+}
+
+header span.material-symbols-outlined:hover{
+    color: black;
+
+    background-color: rgb(221, 221, 221);
+}
+
+nav{
+    display: none;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    display: block;
+
+    padding: 10px;
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+    border-top: 2px solid gray;
+}
+
+header nav ul li a:hover{
+    color: rgb(189, 189, 189);
+    background-color: rgb(103, 103, 103);
+}
+
+main article{
+    background-color: rgba(255, 255, 255, 0.536);
+
+    width: 92vw;
+
+
+    border-radius: 10px;
+
+    margin: 25px auto;
+    padding: 15px;
+}
+
+main article p, main article h2{
+     font-family: 'Courier New', Courier, monospace;
+
+     margin-bottom: 10px;
+
+     text-align: justify;
+}
+
+/*
+footer{
+    background-color: rgb(70, 70, 70);
+}
+
+footer small{
+    display: block;
+
+    padding: 10px;
+
+    text-align: center;
+}
+*/
+
+/* CSS TABLET */
+@media screen and (min-width: 700px) and (max-width: 990px){
+    header nav{
+        display: block;
+    }
+
+    header nav ul li a{
+        display: inline-block;     
+        border-radius: 5px;
+        border: none;
+    }
+        
+    header nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding: 0 35px;
+    }
+
+    header span.material-symbols-outlined{
+        display: none;
+    }
+}
+
+/* CSS DESKTOP */
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    header nav{
+        display: block;
+    }
+
+    header nav ul li a{
+        display: inline-block;     
+        border-radius: 5px;
+        border: none;
+    }
+        
+    header nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding: 0 160px 0 35px;
+    }
+
+
+    header span.material-symbols-outlined{
+        display: none;
+    }
+}
+
+/* CSS TELAS GRANDES */
+@media screen and (min-width: 1200px){
+    header nav{
+        display: block;
+    }
+
+    header nav ul li a{
+        display: inline-block;     
+        border-radius: 5px;
+        border: none;
+    }
+        
+    header nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            width: 1000px;
+
+            margin: 0 auto;
+            padding: 0 160px 0 35px;
+    }
+
+
+    header span.material-symbols-outlined{
+        display: none;
+    }
+
+    main article{
+        max-width: 1080px;
+    }
+}
